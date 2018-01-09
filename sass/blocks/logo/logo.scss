@@ -1,0 +1,13 @@
+.logo {
+	flex-grow: 1;
+}
+
+.logo__text {
+	@include text(44, 46);
+	display: block;
+}
+
+.logo__subtext {
+	@include text(20, 40);
+	display: block;
+}

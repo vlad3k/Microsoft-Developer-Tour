@@ -1,0 +1,166 @@
+.places {
+	position: relative;
+	display: flex;
+	align-items: flex-start;
+	margin-bottom: 423px;
+	background-color: #fff;
+}
+
+.places:before {
+	content: '';
+	position: absolute;
+	top: 20px;
+	left: 0;
+	display: block;
+	margin-left: -573px;
+	width: 596px;
+	height: 590px;
+	background-image: url(../img/bg__places-wrap_left.png);
+}
+
+.places:after {
+	content: '';
+	position: absolute;
+	top: 105px;
+	right: 0;
+	display: block;
+	margin-right: -576px;
+	width: 568px;
+	height: 519px;
+	background-image: url(../img/bg__places-wrap_right.png);
+}
+
+.places__list {
+	@include reset-lis;
+	flex-grow: 1;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.places__item {
+	margin-right: em(30);
+	margin-bottom: em(25);
+}
+
+.places__add-wrap {
+	height: 100%;
+	max-width: 327px;
+	width: 100%;
+}
+
+.places__add {
+	position: relative;
+	padding-top: em(79);
+	padding-left: em(22);
+	padding-right: em(18);
+	padding-bottom: em(20);
+	width: 100%;
+	max-width: 327px;
+	height: 328px;
+	font-size: em(36);
+	line-height: em(27);
+	font-weight: 300;
+	background-color: #eeeeee;
+	border-radius: 2px;
+	overflow: hidden;
+}
+
+.places__item.places__add-wrap {
+	margin-right: 0;
+}
+
+.places__add:before {
+	@include bg-props();
+	content: '';
+	position: absolute;
+	top: 15px;
+	left: 33px;
+	display: block;
+	width: 70px;
+	height: 89px;
+	background-image: url(../img/icon-manFlag.png);
+}
+
+.places__nowrap {
+	white-space: nowrap;
+}
+
+.places__add-btn {
+	margin-top: em(28);
+}
+
+@media only screen and (max-width: 1430px)  {
+	
+	.places {
+		margin-bottom: em(200);
+	}
+	
+	.places__list {
+    justify-content: center;
+	}
+	
+	.places__item.places__add-wrap {
+		order: -1;
+		margin-right: 15px;
+	}
+	
+	.places__item {
+		margin: 0 15px 20px;
+	}
+	
+	.places__add {
+		margin-right: 30px;
+	}
+	
+}
+
+@media only screen and (max-width: 768px)  {
+	
+	
+	.places {
+		margin-bottom: em(50);
+	}
+	
+	.places__add {
+			padding-top: em(45);
+	}
+	
+	.item-place__img {
+		opacity: 1;
+	}
+	
+	.places__add:before {
+		left: auto;
+		right: -15px;
+    transform: translateX(-50%);
+	}
+	
+	.places__add {
+		display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+		flex-direction: column;
+	}
+	
+}
+
+@media only screen and (max-width: 525px) {
+	
+	.places__item.places__add-wrap {
+		margin-right: 0;
+	}
+	
+	.places__add {
+		font-size: em(50);
+	}
+	
+	.places__item {
+		margin: 0 0 15px;
+	}
+	
+	.places__add-btn {
+		margin-top: em(50);
+	}
+	
+
+}

@@ -1,0 +1,22 @@
+.go-reg {
+	padding-bottom: em(40);
+	text-align: center;
+	background-image: url(../img/bg__go-reg.png);
+	@include bg-props;
+	background-position: center 20px;
+}
+
+.go-reg__text {
+	display: block;
+	font-size: em(36);
+	line-height: 1.12;
+	font-weight: 300;
+	text-align: center;
+}
+
+.go-reg__btn {
+	display: inline-block;
+	margin-top: 30px;
+	padding-left: em(47);
+	padding-right: em(47);
+}

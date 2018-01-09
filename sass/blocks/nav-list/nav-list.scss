@@ -1,0 +1,31 @@
+.nav-list {
+	@include reset-lis;
+	display: flex;
+	margin-right: em(61);
+	padding-top: em(6);
+}
+
+.nav-list__item {
+	margin-right: em(37);
+}
+
+.nav-list__item:last-child {
+	margin-right: 0;
+}
+
+.nav-list__link {
+	@include text(24, 32, 5, $SegoeUI, $color__link);
+	transition: color 150ms ease;
+}
+
+.nav-list__link:hover {
+	color: $color__link_hover;
+}
+
+@media only screen and (max-width: 525px) {
+	
+	.nav-list {
+		margin-right: 0;
+		margin-bottom: em(20);
+	}
+}

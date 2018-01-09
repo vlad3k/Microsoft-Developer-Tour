@@ -1,0 +1,12 @@
+.page-nav {
+	display: flex;
+	justify-content: space-between;
+}
+
+@media only screen and (max-width: 1000px)  {
+	
+	.page-nav {
+		flex-direction: column;
+		text-align: center;
+	}
+}

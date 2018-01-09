@@ -1,0 +1,19 @@
+.menu-wrap {
+	display: flex;
+	padding-top: em(8);
+}
+
+@media only screen and (max-width: 1000px)  {
+	.menu-wrap {
+		justify-content: center;
+	}
+}
+
+@media only screen and (max-width: 525px)  {
+	
+	.menu-wrap {
+		flex-direction: column;
+		align-items: center;
+	}
+}
+

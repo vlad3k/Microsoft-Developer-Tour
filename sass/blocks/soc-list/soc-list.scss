@@ -1,0 +1,41 @@
+.soc-list {
+	display: flex;
+	@include reset-lis;
+}
+
+.soc-list__item {
+	margin-right: em(27);
+}
+
+.soc-list__item:last-child {
+	margin-right: 0;
+}
+
+.soc-list__link {
+	display: block;
+	height: 34px;
+	font-size: 0;
+	@include bg-props();
+	background-image: url(../img/sprite-soc.png);
+	transition: opacity 200ms ease;
+}
+
+.soc-list__link:hover {
+	opacity: 0.8;
+}
+
+.soc-list__link--fb {
+	width: 21px;
+	background-position: -10px -90px;
+}
+
+.soc-list__link--tw {
+	width: 33px;
+	background-position: -5px -2px;
+}
+
+.soc-list__link--vk {
+	width: 37px;
+	background-position: -5px -45px;
+}
+

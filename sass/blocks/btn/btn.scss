@@ -1,0 +1,23 @@
+.btn {
+	display: block;
+	padding-top: em(15);
+	padding-bottom: em(19);
+	padding-left: em(10);
+	padding-right: em(10);
+	font-size: 24px;
+	line-height: 32px;
+	text-align: center;
+	color: $color__text-light;
+	background-color: $bgcolor__btn;
+	border: 2px solid $bgcolor__btn-border;
+	border-radius: 3px;
+	box-shadow: inset 0px 5px 0px 0px rgba(167,230,57,1);
+	transition: 200ms ease; 
+}
+
+.btn:hover {
+	cursor: pointer;
+	background-color: darken($bgcolor__btn, 5%);
+	box-shadow: none;
+	border-color: darken($bgcolor__btn-border, 5%)
+}

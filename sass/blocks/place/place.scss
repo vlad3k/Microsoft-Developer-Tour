@@ -1,0 +1,167 @@
+.place {
+	display: none;
+	width: 100%;
+	overflow: hidden;
+}
+
+.place__in {
+	position: relative;
+	display: flex;
+	align-items: center;
+	margin-top: em(39);
+	margin-bottom: em(69);
+	width: 100%;
+}
+
+.place__img {
+	margin-right: em(90);
+	width: 49%;
+	height: auto;
+	flex-shrink: 0;
+}
+
+.place__desc {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	padding-top: em(15);
+	padding-bottom: em(20);
+	padding-right: em(80);
+	width: 100%;
+}
+
+.place__tit {
+	margin-bottom: em(14);
+	font-size: em(54);
+	line-height: 1.03;
+	font-weight: 300;
+}
+
+.place__text {
+	margin-bottom: em(34);
+}
+
+.place__list {
+	@include reset-lis;
+}
+
+.place__item {
+	position: relative;
+	padding-left: em(40);
+	padding-bottom: em(15);
+}
+
+.place__item:before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: block;
+	width: 27px;
+	height: 31px;
+	background-image: url(../img/place/sprites-place.png);
+	background-repeat: no-repeat;
+}
+
+.place__item_url:before {
+	background-position: -2px -82px;
+}
+
+.place__item_addr:before {
+	background-position: -2px -6px;
+}
+
+.place__item_name:before {
+	background-position: -2px -46px;
+}
+
+.place__link {
+	color: $color__link;
+	transition: color 150ms ease;
+}
+
+.place__link:hover {
+	color: $color__link_hover;
+}
+
+.place__nowrap {
+	white-space: nowrap;
+}
+
+.place__close {
+	position: absolute;
+	top: 0;
+	right: 0px;
+	width: 13px;
+	height: 13px;
+	background-color: transparent;
+}
+
+.place__close:hover {
+	cursor: pointer;
+}
+
+.place__close-line1,
+.place__close-line2 {
+	position: absolute;
+	top: calc(50% - 1px);
+	display: block;
+	width: 100%;
+	height: 2px;
+	background-color: #000;
+	transform: rotate(45deg);
+}
+
+.place__close-line2 {
+	transform: rotate(-45deg);
+}
+
+@media only screen and (max-width: 1430px)  {
+	
+	.place__img {
+		margin-right: em(50);
+	}
+	
+}
+
+@media only screen and (max-width: 1200px) {
+	
+	.place {
+		font-size: em(18);
+	}
+	
+	.place__in {
+		display: flex;
+		flex-direction: column;
+		margin-top: em(30);
+		padding-top: em(50);
+		padding-bottom: em(50);
+		margin: 0 auto;
+		max-width: 680px;
+	}
+	
+	.place__item {
+		padding-left: em(50);
+	}
+	
+	.place__img {
+		width: 100%;
+		margin-right: 0;
+		margin-bottom: em(25);
+	}
+	
+	.place__desc {
+		padding-left: 0;
+		padding-right: 0;
+	}
+}
+
+@media only screen and (max-width: 768px) {
+	
+	.place__item {
+		padding-left: 40px;
+	}
+}
+
+
+

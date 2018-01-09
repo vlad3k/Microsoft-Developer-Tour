@@ -1,0 +1,52 @@
+.partners {
+	@include reset-lis;
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+.partners__item {
+	margin-bottom: em(20);
+	padding: 0 em(30);
+}
+
+.partners__link {
+	display: block;
+	font-size: 0;
+	height: 25px;
+	background-image: url(../img/partners/partners.png);
+	background-repeat: no-repeat;
+}
+
+.partners__link_windows {
+	width: 127px;
+	background-position: -5px -100px;
+}
+
+.partners__link_vstudio {
+	width: 178px;
+	background-position: -5px -66px;
+}
+
+.partners__link_mcazure {
+	width: 138px;
+	background-position: -5px -2px;
+}
+
+.partners__link_winphone {
+	width: 174px;
+	background-position: -5px -136px;
+}
+
+.partners__link_microsoft {
+	width: 115px;
+	background-position: -5px -31px;
+}
+
+@media only screen and (max-width: 1430px)  {
+	
+	.partners__item {
+		padding: 0 em(15);
+	}
+	
+}

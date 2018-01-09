@@ -1,0 +1,12 @@
+.main-header {
+	padding-top: em(49);
+	padding-bottom: em(40);
+}
+
+@media only screen and (max-width: 1000px) {
+	
+	.main-header{
+		padding-top: em(29);
+		padding-bottom: em(20);
+	}
+}

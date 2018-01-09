@@ -1,0 +1,40 @@
+.footer-nav {
+	margin-bottom: 39px;
+}
+
+.footer-nav__list {
+	@include reset-lis;
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+.footer-nav__item {
+	margin-bottom: 10px;
+	padding: 0 em(38);
+}
+
+.footer-nav__item_cont {
+	padding-left: 76px;
+}
+
+.footer-nav__item_conf {
+	padding-right: em(80);
+}
+
+.footer-nav__link {
+	color: $color__link;
+	transition: color 150ms ease;
+}
+
+.footer-nav__link:hover {
+	color: $color__link_hover;
+}
+
+@media only screen and (max-width: 1430px)  {
+	
+	.footer-nav__item {
+		padding: 0 em(15);
+	}
+	
+}

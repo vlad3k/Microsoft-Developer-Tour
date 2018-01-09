@@ -1,0 +1,24 @@
+.body {
+	display: flex;
+	flex-direction: column;
+	font-family: $SegoeUI;
+	font-weight: normal;
+	font-size: 24px;
+	line-height: 32px;
+	color: $color__text-main;
+	background-color: #fff
+}
+
+@media only screen and (max-width: 1430px) {
+	
+	.body {
+		font-size: 22px;
+	}
+}
+
+@media only screen and (max-width: 525px) {
+	
+	.body {
+		font-size: 18px;
+	}
+}
